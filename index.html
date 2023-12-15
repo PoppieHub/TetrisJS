@@ -2,12 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тетрис</title>
+    <link rel="shortcut icon" href="./src/assets/img/logo.svg" type="image/svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/assets/styles/layout.css">
 </head>
 <body>
-    <canvas id="gameField">
-    </canvas>
+<div class="container">
+    <div class="game-wrapper">
+        <div class="info-section">
+            <span id="score">
+                0
+            </span>
+        </div>
+        <div class="board-section"></div>
+        <div class="control-section">
+            <div class="col">
+                <div class="arrow-control">
+                    <div></div>
+                    <button class="btn" id="btn-up">
+                        &#11148;
+                    </button>
+                    <div></div>
+                    <button class="btn" id="btn-left">
+                        &#5130;
+                    </button>
+                    <div></div>
+                    <button class="btn" id="btn-right">
+                        &#5125;
+                    </button>
+                    <div></div>
+                    <button class="btn" id="btn-down">
+                        &#5121;
+                    </button>
+                    <div></div>
+                </div>
+            </div>
+            <div class="col">
+                <button class="btn btn-large" id="btn-drop">
+                    &#5121;
+                </button>
+            </div>
+        </div>
+        <div class="setting-section">
+            <button class="btn" id="btn-pause">
+                Pause
+            </button>
+            <button class="btn" id="btn-help">
+                How use?
+            </button>
+        </div>
+    </div>
+</div>
     <script type="module" src="./src/scripts/main.js"></script>
 </body>
 </html>
