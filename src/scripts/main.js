@@ -1,6 +1,8 @@
 let board = document.querySelector('.board-section');
 
+// Генерируем 200 клеток
 for (let i = 0; i < 200; i++) {
-    let block = '<div class="block"></div>'
-    board.innerHTML += block;
+    let block = document.createElement('div');
+    block.classList.add('block');
+    board.appendChild(block);
 }
